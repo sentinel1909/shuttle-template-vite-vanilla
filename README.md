@@ -1,0 +1,1 @@
+# Shuttle Template - Vite Vanilla

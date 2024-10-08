@@ -1,0 +1,32 @@
+[package]
+name = "shuttle-template-vite-vanilla-server"
+version = "0.1.0"
+edition = "2021"
+description = "A template for an Axum API which serves up Vanilla HTML/CSS/JS assets built with Vite"
+readme = "README.md"
+repository = "https://github.com/sentinel1909/shuttle-template-vite-vanilla.git"
+license = "MIT"
+publish = false
+
+[[bin]]
+name = "shuttle-template-vite-vanilla-server"
+path = "src/bin/main.rs"
+
+[lib]
+name = "shuttle_template_vite_vanilla_lib"
+path = "src/lib/lib.rs"
+
+[dependencies]
+axum = "0.7.7"
+http = "1.1.0"
+shuttle-axum = "0.48.0"
+shuttle-runtime = { version = "0.48.0", default-features = false  }
+tokio = { version = "1", features = [ "net" ] }
+tower = "0.5.1"
+tower-http = { version = "0.6.1", features = [ "fs", "normalize-path", "request-id", "trace", "util" ] }
+tracing = { version = "0.1.40", features = [ "log" ] }
+tracing-bunyan-formatter = "0.3.9"
+tracing-log = "0.2.0"
+tracing-subscriber = { version = "0.3.18", features = ["registry", "env-filter"] }
+uuid = { version = "1", features = [ "v4" ] }
+

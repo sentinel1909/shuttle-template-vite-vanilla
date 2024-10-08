@@ -1,0 +1,29 @@
+# server related
+/target
+.shuttle*
+Secrets*.toml
+
+# Logs
+site/vite-vanilla/logs
+site/vite-vanilla/*.log
+site/vite-vanilla/npm-debug.log*
+site/vite-vanilla/yarn-debug.log*
+site/vite-vanilla/yarn-error.log*
+site/vite-vanilla/pnpm-debug.log*
+lsite/vite-vanilla/erna-debug.log*
+
+site/vite-vanilla/node_modules
+site/vite-vanilla/dist
+site/vite-vanilla/dist-ssr
+site/vite-vanilla/*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
